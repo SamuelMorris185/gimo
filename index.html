@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Gimoshith</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="title">Hi, I’m Gimoshith.</h1>
+          <p class="subtitle">I build modern web experiences — clean design, great performance, delightful interactions.</p>
+          <p>
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="card-surface">
+            			</div>
+			<div class="about-grid">
+				<div class="about-photo">
+					<div class="photo-frame">
+						<div class="profile-avatar"><img class="profile-avatar-img" src="./gimo.jpg" alt="Samuel Morris"></div>
+					</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I’m a front-end developer focused on creating accessible, responsive, and performant user interfaces. I enjoy turning complex problems into simple, beautiful designs.</p>
+            <ul>
+              <li>html,css,JavaScript</li>
+              <li>python,mysql</li>
+              <li>vs code,figma(basics)</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <p class="projects-empty">I'm updating this section — more projects coming soon. Meanwhile, you can check my <a href="https://github.com/gimoshith21">GitHub</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form class="contact-form" action="mailto:gimoshith21@email.com" method="post" enctype="text/plain">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+          <div class="contact-info">
+            <p>Prefer email? <a href="mailto:gimoshith21@email.com">gimoshith21@email.com</a></p>
+            <p>Or find me on <a href="#">https://github.com/gimoshith21</a> · <a href="#">linkedin.com/in/gimoshith-a</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gimoshith — Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
